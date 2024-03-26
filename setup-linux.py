@@ -12,8 +12,8 @@ if version_info.major == 2:
 else:
   from urllib.request import urlretrieve
 
-address_julia_linux64 = 'https://julialang-s3.julialang.org/bin/linux/x64/0.6/julia-0.6.0-linux-x86_64.tar.gz'
-address_julia_linux32 = 'https://julialang-s3.julialang.org/bin/linux/x86/0.6/julia-0.6.0-linux-i686.tar.gz'
+address_julia_linux64 = 'https://julialang-s3.julialang.org/bin/linux/x64/1.10/julia-1.10.2-linux-x86_64.tar.gz'
+address_julia_linux32 = 'https://julialang-s3.julialang.org/bin/linux/x64/1.10/julia-1.10.2-linux-i686.tar.gz'
 
 def namefile(filename, suffix):
   if not exists(filename + suffix):
@@ -24,7 +24,7 @@ def namefile(filename, suffix):
   return filename + str(count) + suffix
 
 
-filename = 'juila-0.6'
+filename = 'juila-1.10'
 filesuffix = '.tar.gz'
 foldername = expanduser('~/.julia/')
 if not exists(foldername):
