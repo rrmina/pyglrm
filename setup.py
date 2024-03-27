@@ -36,10 +36,10 @@ def installjulia():
   print(msg_needjulia_auto)
   
 
-  # if platform.startswith('linux'):
-  #   check_call([python_binary_path, 'setup-linux.py']) 
-  # else:
-  #   raise RunTimeError(msg_install_failed)
+  if platform.startswith('linux'):
+    check_call([python_binary_path, 'setup-linux.py']) 
+  else:
+    raise RunTimeError(msg_install_failed)
   
   print(msg_postinstall)
 
@@ -56,19 +56,19 @@ def configurejulia():
   
   print(msg_configurejulia)
   
-  try:
-    check_call(['julia', 'setup.jl', python_binary_path, realpath('setup.sh')])
-    return
-  except FileNotFoundError:
-    print(msg_needjulia)
+  # try:
+  #   check_call(['julia', 'setup.jl', python_binary_path, realpath('setup.sh')])
+  #   return
+  # except FileNotFoundError:
+  #   print(msg_needjulia)
   
-  installjulia()
+  # installjulia()
   
-  try:
-    check_call(['julia', 'setup.jl', python_binary_path, realpath('setup.sh')])
-    return
-  except FileNotFoundError:
-    raise RunTimeError(msg_juliaerror)
+  # try:
+  #   check_call(['julia', 'setup.jl', python_binary_path, realpath('setup.sh')])
+  #   return
+  # except FileNotFoundError:
+  #   raise RunTimeError(msg_juliaerror)
     
 
 class CustomInstall(install):
