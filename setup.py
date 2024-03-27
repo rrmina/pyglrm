@@ -36,10 +36,10 @@ def installjulia():
   print(msg_needjulia_auto)
   
 
-  if platform.startswith('linux'):
-    check_call([python_binary_path, 'setup-linux.py']) 
-  else:
-    raise RunTimeError(msg_install_failed)
+  # if platform.startswith('linux'):
+  #   check_call([python_binary_path, 'setup-linux.py']) 
+  # else:
+  #   raise RunTimeError(msg_install_failed)
   
   print(msg_postinstall)
 
