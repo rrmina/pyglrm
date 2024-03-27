@@ -109,7 +109,9 @@ pip install pandas
 python3 -m pip install --user 'https://github.com/JuliaPy/pyjulia/archive/master.zip#egg=julia'
 ```
 
+# Finally Install pyglrm
+pip install git+https://github.com/rrmina/pyglrm --user
+
+
 # Done!!!
 
-# Install pyglrm
-pip install git+https://github.com/rrmina/pyglrm --user
