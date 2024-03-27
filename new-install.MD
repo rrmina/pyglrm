@@ -1,5 +1,7 @@
 # Install pyenv
+```bash
 curl https://pyenv.run | bash
+```
 
 # Add to ~/.bashrc
 export PYENV_ROOT="$HOME/.pyenv"
