@@ -110,8 +110,9 @@ python3 -m pip install --user 'https://github.com/JuliaPy/pyjulia/archive/master
 ```
 
 # Finally Install pyglrm
+```bash
 pip install git+https://github.com/rrmina/pyglrm --user
-
+```
 
 # Done!!!
 
