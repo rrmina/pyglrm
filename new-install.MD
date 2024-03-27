@@ -3,11 +3,11 @@
 curl https://pyenv.run | bash
 ```
 
-# Add to ~/.bashrc
+# Add to the end of ~/.bashrc
 ```text
 ...
 ...
-... endline
+... endline - only copy the lines below
 
 export PYENV_ROOT="$HOME/.pyenv"
 [[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
@@ -65,11 +65,11 @@ tar zxvf julia-1.10.2-linux-x86_64.tar.gz
 ```
 
 # Add Julia to PATH
-# Add the following export line to ~/.bashrc
+# Add the following export line to end of ~/.bashrc
 ```text
 ...
 ...
-... endline 
+... endline - only copy the lines below
 
 export PATH="$PATH:**julia-1.10.2-INSTALL-PATH**/bin"
 ```
