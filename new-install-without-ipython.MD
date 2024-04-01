@@ -47,3 +47,24 @@ Pkg.add("PyCall")
 Pkg.add("LowRankModels")
 exit()
 ```
+
+### Run this as a helloworld python script
+
+```python
+import numpy as np
+from pyglrm import *
+    
+A = np.array([[1, 2, 3, 4], [2, 4, 6, 8], [4, 5, 6, 7]])
+
+g = glrm(n_components=2) #create a class for GLRM (Here it does PCA)
+g.set_training_data(inputs=A)
+g.fit()
+a_new = np.array([6, 7, 8, 9]) #initialize a new row to be tested
+x = g.transform(inputs=a_new) #get the latent representation of a_new
+```
+
+via `python-jl`
+
+```bash
+python-jl helloworld.py
+```
