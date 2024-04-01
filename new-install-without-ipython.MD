@@ -1,10 +1,10 @@
-# Install pyglrm wrapper library
+# 1. Install pyglrm wrapper library
 
 ```bash
 pip install git+https://github.com/rrmina/pyglrm --user
 ```
 
-# Install Julia 1.10.2
+# 2. Install Julia 1.10.2
 
 ### Download and Extract Julia
 ```bash
@@ -33,7 +33,7 @@ export PATH="$HOME/.julia/julia-1.10.2/bin:$PATH"
 source ~/.bashrc
 ```
 
-# Install the necessary packages in Julia
+# 3. Install the necessary packages in Julia
 
 ### Open Julia
 ```bash
@@ -47,6 +47,8 @@ Pkg.add("PyCall")
 Pkg.add("LowRankModels")
 exit()
 ```
+
+# 4. Test Installation
 
 ### Run this as a helloworld python script
 
